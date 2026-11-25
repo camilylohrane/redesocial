@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar publicação - Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Bloom<span>✦</span></h1>
+
+    <nav>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html">Login</a>
+        <a href="feed.html">Início</a>
+        <a href="postagem.html">Publicar</a>
+        <a href="curtidas.html">Curtidas</a>
+    
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+
+        <h2>Criar publicação</h2>
+        <p>Compartilhe seus momentos com a comunidade!</p>
+
+        <form action="index.php?rota=publicacao" method="POST">
+
+            <label>ID do usuário</label>
+            <input type="number" name="id_usuario" placeholder="ID do usuário" required>
+
+            <label>Legenda</label>
+            <textarea name="legenda" placeholder="O que você está pensando?" required></textarea>
+
+            <label>URL da imagem</label>
+            <input type="url" name="imagem_url" placeholder="Cole o link da imagem">
+
+            <button type="submit">Publicar</button>
+
+        </form>
+
+        <p class="link">
+            <a href="feed.html">Voltar para o feed</a>
+        </p>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026  Bloom - Conectando pessoas.</p>
+</footer>
+
+</body>
+</html>

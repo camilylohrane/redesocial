@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Bloom<span>✦</span></h1>
+
+    <nav>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html">Login</a>
+        <a href="feed.html">Início</a>
+        <a href="postagem.html">Publicar</a>
+        <a href="curtidas.html">Curtidas</a>
+    
+    </nav>
+</header>
+
+
+<main>
+    <section class="container">
+        <h2>Bem-vindo de volta!</h2>
+        <p>Entre na sua conta.</p>
+
+        <form action="index.php?rota=login" method="POST">
+
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label>Senha</label>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+
+        <p class="link">
+            Não possui uma conta?
+            <a href="cadastro.html">Cadastre-se</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026  Bloom - Conectando pessoas.</p>
+</footer>
+
+</body>
+</html>

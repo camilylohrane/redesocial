@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtidas - Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Bloom<span>✦</span></h1>
+
+    <nav>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="login.html">Login</a>
+        <a href="feed.html">Início</a>
+        <a href="postagem.html">Publicar</a>
+        <a href="curtidas.html">Curtidas</a>
+    
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+
+        <h2>Curtir publicação</h2>
+        <p>Registre sua curtida em uma publicação.</p>
+
+        <form action="index.php?rota=curtida" method="POST">
+
+            <label>ID do usuário</label>
+            <input type="number" name="id_usuario" placeholder="Digite o ID do usuário" required>
+
+            <label>ID da publicação</label>
+            <input type="number" name="id_publicacao" placeholder="Digite o ID da publicação" required>
+
+            <button type="submit">♡ Curtir publicação</button>
+
+        </form>
+
+        <div class="descurtir">
+            <h3>Remover curtida</h3>
+
+            <form action="index.php?rota=curtida" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+
+                <label>ID da curtida</label>
+                <input type="number" name="id_curtida" placeholder="Digite o ID da curtida" required>
+
+                <button type="submit">Remover curtida</button>
+            </form>
+        </div>
+
+        <p class="link">
+            <a href="feed.html">Voltar para o feed</a>
+        </p>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026  Bloom - Conectando pessoas.</p>
+</footer>
+
+</body>
+</html>
